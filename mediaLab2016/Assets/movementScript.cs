@@ -3,7 +3,7 @@ using System.Collections;
 
 public class movementScript : MonoBehaviour {
 
-    public float movementFactor;
+    public float movementFactor = 0.1;
 
 	// Use this for initialization
 	void Start () {
