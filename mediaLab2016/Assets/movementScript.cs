@@ -27,7 +27,7 @@ public class movementScript : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.UpArrow))
         {
             //Move forward
-            transform.position += directionVector * movementFactor; 
+            moveForward();
         }else if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             //Move forward
@@ -44,5 +44,10 @@ public class movementScript : MonoBehaviour {
         //    transform.position += new Vector3(movementFactor, 0, 0);
         //}
 
+    }
+
+    public void moveForward()
+    {
+        transform.position += directionVector * movementFactor;
     }
 }
